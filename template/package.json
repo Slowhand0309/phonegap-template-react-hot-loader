@@ -24,10 +24,10 @@
     "webpack-merge": "^0.7.3"
   },
   "scripts": {
-    "android": "cordova run android",
-    "ios": "cordova run ios",
-    "prepare": "node config && webpack && cordova prepare",
-    "build": "node config && webpack && cordova build",
+    "android": "phonegap cordova run android",
+    "ios": "phonegap cordova run ios",
+    "prepare": "node config && webpack && phonegap cordova prepare",
+    "build": "node config && webpack && phonegap cordova build",
     "start": "node config && HOST=0.0.0.0 webpack-dev-server",
     "test": "echo \"No tests (yet!) -- submit a PR?\" && exit 0"
   },
